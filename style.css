@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.hero {
+    background-image: url("hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: left;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #353535;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #580000;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.container .bottom { 
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+
+}
+
+.circle-steps {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.circle-steps li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.circle-steps li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff4d4d;
+}
+
+.circle-steps li:last-child {
+    margin-bottom: 0;
+}
+/* Rest of the CSS code remains the same */
+
+#cursor {
+    display: inline-block;
+    width: 3px;
+    height: 25px;
+    background-color: #000;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 49.9% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
